@@ -68,7 +68,7 @@ public class MyElectricMainFragment extends Fragment
     static String emoncms_url = "https://emoncms.org";
     static String emoncms_apikey = "892268eb10dd998c50f7cfbfc6f75f24";
     static String powerCostSymbol;
-    static float powerCost = 8;
+    static float powerCost = 85;
     static float powerScale;
     float dpWidth = 0;
 
