@@ -30,7 +30,7 @@
             android:key="myelectric_unit_cost"
             android:title="@string/settings_title_myelectric_unit_cost"
             android:inputType="numberDecimal"
-            android:defaultValue="0" />
+            android:defaultValue="0.085" />
 
         <ListPreference
             android:key="myelectric_cost_symbol"
