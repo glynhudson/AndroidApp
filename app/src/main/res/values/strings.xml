@@ -17,7 +17,7 @@
     //
     //  TRANSLATABLE
     //
-    <string name="me_title">My Electric</string>
+    <string name="me_title">Hafod y Porth</string>
     <string name="me_settings_title">My Electric Feeds</string>
 
     <string name="ms_title">My Solar</string>
@@ -27,8 +27,8 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="cost_label">kWh / Cost</string>
-    <string name="power_now_label">POWER NOW</string>
-    <string name="use_today_label">USE TODAY</string>
+    <string name="power_now_label">HYDRO NOW</string>
+    <string name="use_today_label">HYDRO TODAY</string>
     <string name="solar_pv_label">SOLAR PV</string>
 
     <string name="open">Open</string>

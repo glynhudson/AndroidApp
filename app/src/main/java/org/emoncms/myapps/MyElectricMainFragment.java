@@ -68,7 +68,7 @@ public class MyElectricMainFragment extends Fragment
     static String emoncms_url = "https://emoncms.org";
     static String emoncms_apikey = "892268eb10dd998c50f7cfbfc6f75f24";
     static String powerCostSymbol;
-    static float powerCost = 85;
+    static float powerCost = 8500;
     static float powerScale;
     float dpWidth = 0;
 
@@ -501,12 +501,13 @@ public class MyElectricMainFragment extends Fragment
         super.onCreate(savedInstanceState);
 
         SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(getActivity().getBaseContext());
+        /* NO NEED TO LOAD PREFERANCES SINCE URL, API & ID'S are hard coaded 
         emoncms_url = sp.getBoolean(getString(R.string.setting_usessl), false) ? "https://" : "http://";
         emoncms_url += sp.getString(getString(R.string.setting_url), "emoncms.org");
         emoncms_apikey = sp.getString(getString(R.string.setting_apikey), null);
         wattFeedId = Integer.valueOf(sp.getString("myelectric_power_feed", "-1"));
         kWhFeelId = Integer.valueOf(sp.getString("myelectric_kwh_feed", "-1"));
-
+        */
         powerScale = Integer.valueOf(sp.getString("myelectric_escale", "0")) == 0 ? 1.0F : 0.001F;
         powerCost = Float.parseFloat(sp.getString("myelectric_unit_cost", "0"));
         powerCostSymbol = sp.getString("myelectric_cost_symbol", "£");
