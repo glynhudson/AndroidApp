@@ -65,10 +65,10 @@ public class MyElectricMainFragment extends Fragment
     static final String kwh_default_feed_name = "use_kwh";
     static final int dailyChartUpdateInterval = 60000;
 
-    static String emoncms_url;
-    static String emoncms_apikey;
+    static String emoncms_url = "https://emoncms.org";
+    static String emoncms_apikey = "892268eb10dd998c50f7cfbfc6f75f24";
     static String powerCostSymbol;
-    static float powerCost = 0;
+    static float powerCost = 8;
     static float powerScale;
     float dpWidth = 0;
 
@@ -84,8 +84,8 @@ public class MyElectricMainFragment extends Fragment
     SwitchCompat costSwitch;
     Handler mHandler = new Handler();
 
-    int wattFeedId = 0;
-    int kWhFeelId = 0;
+    int wattFeedId = 119861;
+    int kWhFeelId = 120884;
     long timezone = 0;
     double yesterdaysPowerUsage;
     double totalPowerUsage;
