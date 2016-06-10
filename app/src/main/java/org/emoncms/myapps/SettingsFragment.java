@@ -40,6 +40,7 @@ public class SettingsFragment extends PreferenceFragment implements SharedPrefer
 
         getPreferenceManager().getSharedPreferences().registerOnSharedPreferenceChangeListener(this);
 
+        /*
         Preference button = findPreference("scanqrcode");
         button.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
             @Override
@@ -50,6 +51,7 @@ public class SettingsFragment extends PreferenceFragment implements SharedPrefer
                 return true;
             }
         });
+        */
     }
 
     @Override
