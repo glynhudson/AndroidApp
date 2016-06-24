@@ -17,7 +17,7 @@
     //
     //  TRANSLATABLE
     //
-    <string name="me_title">Hafod y Porth</string>
+    <string name="me_title">Cyd Ynni Hydro</string>
     <string name="me_settings_title">My Electric Feeds</string>
 
     <string name="ms_title">My Solar</string>
@@ -37,7 +37,7 @@
     <string name="error">Error</string>
     <string name="settings">Settings</string>
 
-    <string name="server_not_configured">Please configure your emoncms server and API key from the settings menu.</string>
+    <string name="server_not_configured">Please configure your Emoncms server and API key from the settings menu.</string>
     <string name="me_not_configured_text">Please select feeds to display using the cog icon in the toolbar.</string>
     <string name="feed_download_error_message">Unable to download feed list. Please check URL and API settings as well as connectivity to emoncms.</string>
     <string name="invalid_number_of_responses">Invalid number of responses from API</string>
