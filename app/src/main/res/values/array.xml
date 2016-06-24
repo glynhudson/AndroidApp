@@ -35,12 +35,12 @@
         <item>@string/saturday_initial</item>
     </string-array>
 
-    <string-array name="language_text">
+    <string-array name="language_text" translatable="false">
         <item>System Default</item>
         <item>English</item>
     </string-array>
 
-    <string-array name="language_values">
+    <string-array name="language_values" translatable="false">
         <item>@string/setting_language</item>
         <item>en</item>
     </string-array>
