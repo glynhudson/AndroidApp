@@ -45,7 +45,7 @@
     <string name="invalid_watt_feedid">Invalid use feed ID, please select a watt feed from the configuration menu</string>
 
     <string name="txt_power_default">0KW</string>
-    <string name="use_today_default">0.0kWh</string>
+    <string name="use_today_default">0kWh</string>
 
     <string name="button_3h_label">3H</string>
     <string name="button_6h_label">6H</string>

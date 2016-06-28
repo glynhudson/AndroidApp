@@ -100,7 +100,9 @@ public class MyElectricMainFragment extends Fragment
     int [] chart2_colors;
 
     double powerNow = 0;
+    double powerNow_dec = 0;
     double powerToday = 0;
+    double powerToday_dec =0;
 
     boolean blnShowCost = false;
 
@@ -187,7 +189,10 @@ public class MyElectricMainFragment extends Fragment
                                     kwh_value = response.getString(1);
 
                                     if (Utils.isNumeric(watt_value))
-                                        powerNow = Float.parseFloat(watt_value);
+
+                                        powerNow_dec = Float.parseFloat(watt_value);
+                                        powerNow = (int)powerNow_dec;
+
 
                                     if (Utils.isNumeric(kwh_value))
                                         totalPowerUsage = Float.parseFloat(kwh_value) * powerScale;
@@ -316,7 +321,8 @@ public class MyElectricMainFragment extends Fragment
                             if (power.size() > 0)
                             {
                                 yesterdaysPowerUsage = power.get(power.size() - 1);
-                                powerToday = totalPowerUsage - yesterdaysPowerUsage;
+                                powerToday_dec = totalPowerUsage - yesterdaysPowerUsage;
+                                powerToday = (int)powerToday_dec; //no decimal places
                                 updateTextFields();
 
                                 calendar.setTimeInMillis(dates.get(dates.size()-1));
@@ -490,8 +496,8 @@ public class MyElectricMainFragment extends Fragment
         }
         else
         {
-            txtPower.setText(String.format(getActivity().getResources().getConfiguration().locale, "%.0fW", powerNow));
-            txtUseToday.setText(String.format(getActivity().getResources().getConfiguration().locale, "%.1fkWh", powerToday));
+            txtPower.setText(String.format(getActivity().getResources().getConfiguration().locale, "%.0fKW", powerNow));
+            txtUseToday.setText(String.format(getActivity().getResources().getConfiguration().locale, "%.0fkWh", powerToday));
         }
     }
 
