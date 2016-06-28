@@ -84,7 +84,7 @@ public class MyElectricMainFragment extends Fragment
     SwitchCompat costSwitch;
     Handler mHandler = new Handler();
 
-    int wattFeedId = 119861;
+    int wattFeedId = 119861; //Kwh no W
     int kWhFeelId = 120884;
     long timezone = 0;
     double yesterdaysPowerUsage;
@@ -885,7 +885,7 @@ public class MyElectricMainFragment extends Fragment
         private DecimalFormat mFormat;
 
         public Chart2ValueFormatter() {
-            mFormat = new DecimalFormat("###,###,##0.0"); // use one decimal
+            mFormat = new DecimalFormat("###,###,##0"); // use one decimal
             mFormat.setNegativePrefix("");
         }
 

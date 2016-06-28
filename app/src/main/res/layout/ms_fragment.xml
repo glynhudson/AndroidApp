@@ -34,7 +34,7 @@
         android:id="@+id/txtMSPower"
         android:textSize="@dimen/main_stats_text_size"
         android:textStyle="bold"
-        android:text="4000W"
+        android:text="100KW"
         android:layout_below="@id/powerLabel"
         android:textColor="@color/textColorBlue"
         android:layout_width="wrap_content"

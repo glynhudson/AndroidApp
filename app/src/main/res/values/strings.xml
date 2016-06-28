@@ -44,7 +44,7 @@
     <string name="invalid_kwh_feedid">Invalid use_kwh feed ID, please select a kwh feed from the configuration menu</string>
     <string name="invalid_watt_feedid">Invalid use feed ID, please select a watt feed from the configuration menu</string>
 
-    <string name="txt_power_default">0W</string>
+    <string name="txt_power_default">0KW</string>
     <string name="use_today_default">0.0kWh</string>
 
     <string name="button_3h_label">3H</string>
@@ -101,7 +101,7 @@
 
     <string name="settings_title_myelectric_feeds">Feeds</string>
     <string name="settings_title_myelectric_currency">Currency</string>
-    <string name="settings_title_myelectric_power_feed">Power feed (Watts)</string>
+    <string name="settings_title_myelectric_power_feed">Power feed (Kw)</string>
     <string name="settings_title_myelectric_kwh_feed">"Bar graph feed (kWh)</string>
     <string name="settings_title_myelectric_escale">Wh or kWh Feed</string>
     <string name="settings_title_myelectric_unit_cost">Cost</string>
