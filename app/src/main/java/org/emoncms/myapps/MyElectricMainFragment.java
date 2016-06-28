@@ -870,7 +870,7 @@ public class MyElectricMainFragment extends Fragment
         private DecimalFormat mFormat;
 
         public Chart1YAxisValueFormatter () {
-            mFormat = new DecimalFormat("###,###,##0"); // use one decimal
+            mFormat = new DecimalFormat("###,###,##0"); // no dp
         }
 
         @Override
@@ -885,7 +885,7 @@ public class MyElectricMainFragment extends Fragment
         private DecimalFormat mFormat;
 
         public Chart2ValueFormatter() {
-            mFormat = new DecimalFormat("###,###,##0"); // use one decimal
+            mFormat = new DecimalFormat("###,###,##0"); // no dp
             mFormat.setNegativePrefix("");
         }
 
